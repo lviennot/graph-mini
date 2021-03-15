@@ -15,9 +15,11 @@
  *    g.add_edge(1, 2, 14);
  *    
  *    // It is basically a vector of vectors :
- *    for (node u : g) {
+ *    for (node u : g.nodes()) {
  *        std::cout << u <<" -> ";
- *        for (auto e : g[u]) { std::cout << e.dst <<" "<< e.len <<" "; } 
+ *        for (auto e : g.neighbors(u)) { 
+ *             std::cout << e.dst <<" "<< e.len <<" "; 
+ *        } 
  *        std::cout <<"\n";
  *    }
  *
