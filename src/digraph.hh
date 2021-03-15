@@ -23,6 +23,14 @@
  *        std::cout <<"\n";
  *    }
  *
+ *    // Scan only neighbors IDs:
+ *    for (node u : g.nodes()) {
+ *        std::cout << u <<" -> ";
+ *        for (node v : g.neighbors(u)) { 
+ *             std::cout << v <<" "; 
+ *        } 
+ *        std::cout <<"\n";
+ *    }
  */
 
 #pragma once
