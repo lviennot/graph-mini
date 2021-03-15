@@ -17,7 +17,7 @@
  *    // It is basically a vector of vectors :
  *    for (node u : g.nodes()) {
  *        std::cout << u <<" -> ";
- *        for (edge_head e : g.neighbors(u)) { 
+ *        for (edge_head e : g.out_neighbors(u)) { 
  *             std::cout << e.head() <<" "<< e.length() <<" "; 
  *        } 
  *        std::cout <<"\n";
@@ -26,7 +26,7 @@
  *    // Scan only neighbors IDs:
  *    for (node u : g.nodes()) {
  *        std::cout << u <<" -> ";
- *        for (node v : g.neighbors(u)) { 
+ *        for (node v : g.out_neighbors(u)) { 
  *             std::cout << v <<" "; 
  *        } 
  *        std::cout <<"\n";
