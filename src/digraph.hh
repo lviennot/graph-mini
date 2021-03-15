@@ -18,7 +18,7 @@
  *    for (node u : g.nodes()) {
  *        std::cout << u <<" -> ";
  *        for (auto e : g.neighbors(u)) { 
- *             std::cout << e.dst <<" "<< e.len <<" "; 
+ *             std::cout << e.head() <<" "<< e.length() <<" "; 
  *        } 
  *        std::cout <<"\n";
  *    }
