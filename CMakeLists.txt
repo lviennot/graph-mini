@@ -34,13 +34,13 @@ message(STATUS "  CXX Flags: ${CMAKE_CXX_FLAGS}")
 add_library(common OBJECT
          src/basics.cc
          src/digraph.cc
-#         src/traversal.cc
+         src/traversal.cc
 )
 
 # target_link_libraries (CH LINK_PUBLIC common)
 
-add_executable(main
-        src/main.cc
+add_executable(unit
+        src/unit.cc
         $<TARGET_OBJECTS:common>
 )
 

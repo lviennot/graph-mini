@@ -71,10 +71,10 @@ namespace unit {
         digraph fwd = dg_small_ids;
         digraph bwd = fwd.reverse();
         
-        for (node u : fwd) {
+        for (node u : fwd.nodes()) {
             trav.dijkstra(fwd, u);
             std::vector<dist> u_dist = trav.copy_distances();
-            for (node v : bwd) {
+            for (node v : bwd.nodes()) {
                 trav.dijkstra(bwd, v);
                 dist d = trav.distance(u);
                 std::cout << u <<" "<< v <<" "<< d <<"\n";

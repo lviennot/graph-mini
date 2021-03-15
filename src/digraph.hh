@@ -91,10 +91,6 @@ public:
     
     irange<node> nodes() const { return irange<node>(node(0), node(_n)); }
     
-    // iterator for the graph itself is equivalent to nodes()
-    int_iterator<node> begin() const { return int_iterator<node>(node(0));}
-    int_iterator<node> end() const { return int_iterator<node>(node(_n)); }
-
     
     using hrange = crange<typename std::vector<head>>;
 

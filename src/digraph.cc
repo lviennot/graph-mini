@@ -30,7 +30,7 @@ digraph::hrange digraph::out_neighbors(node u) const {
 std::ostream& operator<<(std::ostream & os, const digraph & g) {
     os << "{ ";
     bool first = true;
-    for (node u : g) {
+    for (node u : g.nodes()) {
         for (auto e : g[u]) {
             if (first) { first = false; }
             else { os << ",\n  "; }

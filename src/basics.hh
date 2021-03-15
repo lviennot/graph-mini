@@ -19,7 +19,8 @@ using node = uint_least32_t;        // a node index
 extern node node_undefined;         // an invalid index
 
 using edge_len = int_least32_t;     // length of an edge
-extern edge_len edge_len_infinity;  // maximum edge_len
+using dist = int64_t;               // length of a path
+extern dist dist_infinity;          // maximum value
 
 struct edge_head {
     node dst;
